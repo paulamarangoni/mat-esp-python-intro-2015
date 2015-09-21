@@ -27,6 +27,14 @@ for i in range(0, N-1, 1):
             lista[j] = temp
 # Escreve no terminal a lista ordenada.			
 print("Lista em ordem crescente:", lista)
+
+plt.figure()
+plt.plot(range(0, N, 1), lista, "ok")
+plt.xlabel("posição na lista")
+plt.ylabel("elementos da lista")
+plt.savefig("bubble-final.png")
+plt.close()
+
 # Indica a lista no intervalo de 14 a 19.
 lista[N-5:N]
 # Imprime a lista no intervalo de 14 a 19.
@@ -34,6 +42,4 @@ print("Cinco maiores valores:", lista[N-5:N])
 # Indica a lista no intervalo de 0 a 4.
 lista[0:5]
 # Imprime a lista no intervalo de 0 a 4.
-print("Cinco menores valores:", lista[0:5])	
-
-			
+print("Cinco menores valores:", lista[0:5])
