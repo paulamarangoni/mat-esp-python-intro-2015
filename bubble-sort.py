@@ -13,7 +13,7 @@ plt.xlabel("Indices")
 plt.ylabel("Valores")
 plt.savefig("fig/bubble-inicio.png")
 plt.close()
-
+A = 1
 # Indica que o valor de i começa do 0 e vai até 18, de um em um.
 for i in range(0, N-1, 1):
 # Indica que o valor de j começa em 1, variando com os valores de i, até 19, de um em um.
@@ -31,7 +31,8 @@ for i in range(0, N-1, 1):
             plt.title ("Troca")
             plt.xlabel("Indices")
             plt.ylabel("Valores")
-            plt.savefig("fig/bubble-troca-{}.png".format(i+1))
+            plt.savefig("fig/bubble-troca-{}.png".format(A))
+            A = A+1
             plt.close()
 # Escreve no terminal a lista ordenada.			
 print("Lista em ordem crescente:", lista)
