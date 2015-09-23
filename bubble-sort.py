@@ -34,7 +34,7 @@ plt.plot(range(0, N, 1), lista, "ok")
 plt.title ("estado final")
 plt.xlabel("indices")
 plt.ylabel("valores")
-plt.savefig("fig/bubble-final.png")
+plt.savefig("fig/bubble-fim.png")
 plt.close()
 
 # Indica a lista no intervalo de 14 a 19.
