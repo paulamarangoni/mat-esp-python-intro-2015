@@ -8,9 +8,9 @@ print("Lista original:", lista)
 import matplotlib.pyplot as plt
 plt.figure()
 plt.plot(range(0, N, 1), lista, "ok")
-plt.title ("estado inicial")
-plt.xlabel("indices")
-plt.ylabel("valores")
+plt.title ("Estado inicial")
+plt.xlabel("Indices")
+plt.ylabel("Valores")
 plt.savefig("fig/bubble-inicio.png")
 plt.close()
 
@@ -26,14 +26,21 @@ for i in range(0, N-1, 1):
             lista[i] = lista[j] 
 # Coloca o arquivo temporario na lista j.
             lista[j] = temp
+            plt.figure()
+            plt.plot(range(0, N, 1), lista, "ok")
+            plt.title ("Troca")
+            plt.xlabel("Indices")
+            plt.ylabel("Valores")
+            plt.savefig("fig/bubble-troca-{}.png".format(i+1))
+            plt.close()
 # Escreve no terminal a lista ordenada.			
 print("Lista em ordem crescente:", lista)
 
 plt.figure()
 plt.plot(range(0, N, 1), lista, "ok")
-plt.title ("estado final")
-plt.xlabel("indices")
-plt.ylabel("valores")
+plt.title ("Estado final")
+plt.xlabel("Indices")
+plt.ylabel("Valores")
 plt.savefig("fig/bubble-fim.png")
 plt.close()
 
