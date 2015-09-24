@@ -7,7 +7,7 @@ N = 20
 lista = [11,18,3,1,16,12,6,19,5,0,14,4,17,9,13,7,10,15,2,8] 
 # Escreve a lista original.
 print("Lista original:", lista)
-# Cria uma figura vazia.
+# Cria uma figura (gráfico) vazia.
 plt.figure()
 # Desenha um gráfico de pontos pretos com a lista no eixo y e os índices no eixo x.
 plt.plot(range(0, N, 1), lista, "ok")
