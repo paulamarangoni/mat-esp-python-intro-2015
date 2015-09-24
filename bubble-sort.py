@@ -1,17 +1,23 @@
+# Importa a biblioteca do matplot.
+import matplotlib.pyplot as plt 
 # Criamos a variável lista e a ordenamos em ordem crescente com o script abaixo.
 # Número de elementos da lista.
 N = 20
 # Indica que a lista possui todos esses elementos.
 lista = [11,18,3,1,16,12,6,19,5,0,14,4,17,9,13,7,10,15,2,8] 
+# Escreve a lista original.
 print("Lista original:", lista)
-
-import matplotlib.pyplot as plt
+# Cria uma figura vazia.
 plt.figure()
+# Desenha um gráfico de pontos.
 plt.plot(range(0, N, 1), lista, "ok")
+# Permite colocar título nos gráficos e nos eixos (x, y).
 plt.title ("Estado inicial")
 plt.xlabel("Indices")
 plt.ylabel("Valores")
+# Salva a figura criada.
 plt.savefig("fig/bubble-inicio.png")
+# Conclui o comando.
 plt.close()
 A = 1
 # Indica que o valor de i começa do 0 e vai até 18, de um em um.
